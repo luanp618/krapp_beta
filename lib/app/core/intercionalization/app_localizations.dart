@@ -12,9 +12,11 @@ class AppLocalizations {
 
   Map<String, String> _localizationsStrings;
 
+
   Future<bool> load() async{
     String jsonString = 
-        await rootBundle.loadString('lang/${locale.languageCode}.json');
+        await rootBundle.loadString('''
+lang/${locale.languageCode}.json''');
     Map<String, dynamic> jsonMap = json.decode(jsonString);
 
      _localizationsStrings = jsonMap.map((key, value) {
