@@ -12,6 +12,7 @@ class AppLocalizations {
 
   Map<String, String> _localizationsStrings;
 
+
   Future<bool> load() async{
     String jsonString = 
         await rootBundle.loadString('''
